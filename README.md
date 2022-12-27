@@ -1,7 +1,7 @@
-# Benchmark of echo functions from erlang port and nif via the [rustler](https://github.com/rusterlium/rustler) lib
+## Benchmark of echo functions from erlang port and nif via the [rustler](https://github.com/rusterlium/rustler) lib
 
 ```
-$ make bench
+$ make init && make bench
 mix run bench/echo.exs
 Operating System: macOS
 CPU Information: Apple M1 Pro
