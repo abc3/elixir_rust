@@ -1,4 +1,4 @@
-# Benchmark of echo functions from erlang port and nif via the Rustler lib
+# Benchmark of echo functions from erlang port and nif via the [rustler](https://github.com/rusterlium/rustler) lib
 
 ```
 $ make bench
