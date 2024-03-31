@@ -15,4 +15,10 @@ defmodule ElixirRust do
   def hello do
     :world
   end
+
+  def rand_string() do
+    Base.encode64(:crypto.strong_rand_bytes(12))
+  end  
+
+  def echo(m), do: m
 end
