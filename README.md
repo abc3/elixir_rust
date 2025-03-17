@@ -23,10 +23,14 @@ Benchmarking port echo ...
 Benchmarking rustler echo ...
 
 Name                   ips        average  deviation         median         99th %
-rustler echo        1.37 M        0.73 μs  ±2009.59%        0.71 μs        0.83 μs
-port echo          0.136 M        7.34 μs    ±58.42%        6.92 μs       11.92 μs
+elixir echo        25.45 M      0.0393 μs ±30595.73%      0.0420 μs      0.0420 μs
+rustler echo        5.94 M       0.168 μs ±16054.07%       0.125 μs        0.25 μs
+port echo          0.124 M        8.05 μs   ±132.95%        6.96 μs       20.71 μs
+docker echo      0.00428 M      233.40 μs    ±34.33%      236.75 μs      340.09 μs
 
 Comparison:
-rustler echo        1.37 M
-port echo          0.136 M - 10.08x slower +6.61 μs
+elixir echo        25.45 M
+rustler echo        5.94 M - 4.28x slower +0.129 μs
+port echo          0.124 M - 204.87x slower +8.01 μs
+docker echo      0.00428 M - 5939.67x slower +233.36 μs
 ```
