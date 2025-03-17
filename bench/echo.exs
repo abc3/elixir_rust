@@ -8,4 +8,7 @@ Benchee.run(%{
   "rustler echo" => fn ->
     "some_string" = ElixirRust.Rustler.echo("some_string")
   end,
+  "docker echo" => fn ->
+    "some_string" = ElixirRust.DockerPort.echo("some_string")
+  end
 })

@@ -22,7 +22,7 @@ defmodule ElixirRust.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:rustler, "~> 0.25.0"},
+      {:rustler, "~> 0.36.1"},
       {:benchee, "~> 1.1.0", only: :dev}
     ]
   end

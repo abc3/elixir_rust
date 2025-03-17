@@ -8,7 +8,8 @@ defmodule ElixirRust.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      ElixirRust.Port
+      ElixirRust.Port,
+      ElixirRust.DockerPort
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
