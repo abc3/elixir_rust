@@ -22,15 +22,17 @@ Estimated total run time: 14 s
 Benchmarking port echo ...
 Benchmarking rustler echo ...
 
-Name                   ips        average  deviation         median         99th %
-elixir echo        25.45 M      0.0393 μs ±30595.73%      0.0420 μs      0.0420 μs
-rustler echo        5.94 M       0.168 μs ±16054.07%       0.125 μs        0.25 μs
-port echo          0.124 M        8.05 μs   ±132.95%        6.96 μs       20.71 μs
-docker echo      0.00428 M      233.40 μs    ±34.33%      236.75 μs      340.09 μs
+Name                        ips        average  deviation         median         99th %
+elixir echo         121768.47 K     0.00821 μs ±44955.52%     0.00830 μs      0.0208 μs
+rustler echo          5639.88 K       0.177 μs ±15245.17%       0.125 μs        0.25 μs
+port echo              131.42 K        7.61 μs    ±75.05%           7 μs       12.79 μs
+docker tcp socket        8.64 K      115.71 μs    ±19.07%      112.58 μs      175.71 μs
+docker echo              4.16 K      240.56 μs    ±12.14%      238.17 μs      315.61 μs
 
 Comparison:
-elixir echo        25.45 M
-rustler echo        5.94 M - 4.28x slower +0.129 μs
-port echo          0.124 M - 204.87x slower +8.01 μs
-docker echo      0.00428 M - 5939.67x slower +233.36 μs
+elixir echo         121768.47 K
+rustler echo          5639.88 K - 21.59x slower +0.169 μs
+port echo              131.42 K - 926.57x slower +7.60 μs
+docker tcp socket        8.64 K - 14089.52x slower +115.70 μs
+docker echo              4.16 K - 29292.60x slower +240.55 μs
 ```

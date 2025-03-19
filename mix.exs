@@ -23,7 +23,8 @@ defmodule ElixirRust.MixProject do
   defp deps do
     [
       {:rustler, "~> 0.36.1"},
-      {:benchee, "~> 1.1.0", only: :dev}
+      {:benchee, "~> 1.3.1", only: :dev},
+      {:ranch, "~> 2.2.0"}
     ]
   end
 end

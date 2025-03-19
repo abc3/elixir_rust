@@ -1,0 +1,7 @@
+FROM python:3-slim
+
+WORKDIR /app
+
+COPY unix_socket.py .
+
+CMD ["python", "socket.py"] 

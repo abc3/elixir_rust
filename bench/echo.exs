@@ -1,3 +1,5 @@
+:timer.sleep(2_500)
+
 Benchee.run(%{
   "elixir echo" => fn ->
     "some_string" = ElixirRust.echo("some_string")
@@ -10,5 +12,8 @@ Benchee.run(%{
   end,
   "docker echo" => fn ->
     "some_string" = ElixirRust.DockerPort.echo("some_string")
+  end,
+  "docker tcp socket" => fn ->
+    "some_string" = ElixirRust.SocketHandler.echo("some_string")
   end
 })
